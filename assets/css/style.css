@@ -113,6 +113,7 @@ p {
   line-height: 26px;
   color: #6a6972;
   margin: 0px;
+  text-align: justify;
 }
 
 .bg_cover {
