@@ -574,7 +574,7 @@ p {
 }
 
 .navbar-nav .nav-item {
-  margin-right: 45px;
+  margin-right: 25px;
   position: relative;
 }
 
@@ -664,6 +664,10 @@ p {
   color: #fe7a7b;
 }
 
+.navbar-nav .nav-item a.dropdown-item {
+  padding: 0.75rem 1rem;
+}
+
 /*===== HEADER HERO =====*/
 .header-hero {
   position: relative;
@@ -709,7 +713,7 @@ p {
 }
 
 .header-hero-content .header-title {
-  font-size: 38px;
+  font-size: 70px;
   font-weight: 700;
   color: #fff;
 }
