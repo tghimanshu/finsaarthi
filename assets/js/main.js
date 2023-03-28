@@ -106,7 +106,7 @@
     duration: 2000,
     intvalues: true,
     interval: 100,
-    append: "k",
+    append: "+",
   });
   cu.start();
 
