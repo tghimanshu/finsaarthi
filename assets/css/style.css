@@ -2246,3 +2246,11 @@ p {
 .pb-225 {
   padding-bottom: 225px;
 }
+
+.our-strengths-ul li i {
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-right: 15px;
+  color: green;
+  margin-top: 15px;
+}
