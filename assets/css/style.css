@@ -1463,11 +1463,12 @@ p {
 .footer-copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding-top: 15px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
+  padding-bottom: 15px;
 }
 
 .copyright-content {
-  padding-top: 15px;
+  /* padding-top: 15px; */
   text-align: center;
 }
 
@@ -2253,4 +2254,34 @@ p {
   margin-right: 15px;
   color: green;
   margin-top: 15px;
+}
+
+.partner-with-us-ul li i {
+  font-size: 1.4em;
+  font-weight: bolder;
+  margin-right: 15px;
+  color: green;
+  margin-top: 15px;
+}
+
+.partner-with-us-ul li {
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-top: 15px;
+}
+
+.footer-copyright .social li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.footer-copyright .social li a {
+  font-size: 22px;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.footer-copyright .social li a:hover {
+  color: #fe8464;
 }
