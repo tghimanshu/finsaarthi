@@ -2,9 +2,9 @@
   COMMON css 
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap");
-
 :root {
   --primary-color: #565da9;
+  --accent-color: #361cc1;
 }
 
 body {
@@ -151,16 +151,16 @@ p {
     linear,
     left top,
     right top,
-    from(#7451a6),
-    color-stop(50%, #7451a6),
-    to(#7451a6)
+    from(var(--primary-color)),
+    color-stop(50%, var(--accent-color)),
+    to(var(--primary-color))
   );
   background: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 50%, #f2f2f2 100%);
   background-size: 200%;
 }
 
 .main-btn:hover {
-  color: #fff;
+  /* color: #fff; */
   background-position: right center;
 }
 
@@ -177,10 +177,13 @@ p {
     linear,
     left top,
     left bottom,
-    from(#fe8464),
-    to(#fe6e9a)
+    from(var(--primary-color)),
+    to(var(--accent-color))
   );
-  background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+  background: linear-gradient(
+    var(--primary-color) 0%,
+    var(--accent-color) 100%
+  );
   width: 150px;
   height: 5px;
   margin-bottom: 10px !important;
@@ -613,7 +616,7 @@ p {
 
 .navbar-nav .nav-item a:hover,
 .navbar-nav .nav-item a.active {
-  color: #565da9;
+  color: var(--primary-color);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -633,15 +636,15 @@ p {
     linear,
     left top,
     right top,
-    from(#565da9),
-    color-stop(50%, #565da9),
-    to(#565da9)
+    from(var(--primary-color)),
+    color-stop(50%, var(--accent-color)),
+    to(var(--primary-color))
   );
   background: linear-gradient(
     to right,
-    #565da9be 0%,
-    #565da9 50%,
-    #565da9be 100%
+    var(--primary-color) 0%,
+    var(--accent-color) 50%,
+    var(--primary-color) 100%
   );
   background-size: 200%;
 }
@@ -661,7 +664,7 @@ p {
 
 .sticky .navbar-nav .nav-item a.active,
 .sticky .navbar-nav .nav-item a:hover {
-  color: #fe7a7b;
+  color: var(--primary-color);
 }
 
 .navbar-nav .nav-item a.dropdown-item {
@@ -882,7 +885,7 @@ p {
 }
 
 .single-services .services-content .services-title a:hover {
-  color: #361cc1;
+  color: var(--primary-color);
 }
 
 .single-services .services-content .text-container {
@@ -899,7 +902,7 @@ p {
   margin-top: 30px;
   font-size: 16px;
   font-weight: 400;
-  color: #fe7a7b;
+  color: var(--primary-color);
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
@@ -915,7 +918,7 @@ p {
 }
 
 .single-services:hover {
-  border-color: #fe7a7b;
+  border-color: var(--primary-color);
 }
 
 .single-services:hover .services-icon .shape {
@@ -982,11 +985,16 @@ p {
     linear,
     left top,
     right top,
-    from(#fe8464),
-    color-stop(50%, #fe6e9a),
-    to(#fe8464)
+    from(var(--primary-color)),
+    color-stop(50%, var(--accent-color)),
+    to(var(--primary-color))
   );
-  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: linear-gradient(
+    to right,
+    var(--primary-color) 0%,
+    var(--accent-color) 50%,
+    var(--primary-color) 100%
+  );
   background-size: 200%;
   height: 50px;
   line-height: 50px;
@@ -1058,7 +1066,7 @@ p {
   text-align: center;
   border-radius: 50%;
   background-color: #fff;
-  color: #fe8464;
+  color: var(--primary-color);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1137,10 +1145,13 @@ p {
     linear,
     left top,
     left bottom,
-    from(#33c8c1),
-    to(#119bd2)
+    from(var(--primary-color)),
+    to(var(--accent-color))
   );
-  background: linear-gradient(#33c8c1 0%, #119bd2 100%);
+  background: linear-gradient(
+    var(--primary-color) 0%,
+    var(--accent-color) 100%
+  );
 }
 
 .counter-wrapper .single-counter.counter-color-2::before {
@@ -1148,10 +1159,13 @@ p {
     linear,
     left top,
     left bottom,
-    from(#fe8464),
-    to(#fe6e9a)
+    from(var(--primary-color)),
+    to(var(--accent-color))
   );
-  background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+  background: linear-gradient(
+    var(--primary-color) 0%,
+    var(--accent-color) 100%
+  );
 }
 
 .counter-wrapper .single-counter.counter-color-3::before {
@@ -1303,11 +1317,16 @@ p {
     linear,
     left top,
     right top,
-    from(#fe8464),
-    color-stop(50%, #fe6e9a),
-    to(#fe8464)
+    from(var(--primary-color)),
+    color-stop(50%, var(--accent-color)),
+    to(var(--primary-color))
   );
-  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: linear-gradient(
+    to right,
+    var(--primary-color) 0%,
+    var(--accent-color) 50%,
+    var(--primary-color) 100%
+  );
   background-size: 200%;
 }
 
@@ -1404,7 +1423,7 @@ p {
 }
 
 .footer-about .social li a:hover {
-  color: #fe8464;
+  color: var(--primary-color);
 }
 
 .footer-title .title {
@@ -1447,7 +1466,7 @@ p {
 }
 
 .link-wrapper .link li a:hover {
-  color: #fe8464;
+  color: var(--primary-color);
 }
 
 .footer-contact .contact {
@@ -1484,7 +1503,7 @@ p {
 }
 
 .copyright-content a:hover {
-  color: #fe8464;
+  color: var(--primary-color);
 }
 
 /*===== BACK TO TOP =====*/
@@ -1501,11 +1520,16 @@ p {
     linear,
     left top,
     right top,
-    from(#fe8464),
-    color-stop(50%, #fe6e9a),
-    to(#fe8464)
+    from(var(--primary-color)),
+    color-stop(50%, var(--accent-color)),
+    to(var(--primary-color))
   );
-  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: linear-gradient(
+    to right,
+    var(--primary-color) 0%,
+    var(--accent-color) 50%,
+    var(--primary-color) 100%
+  );
   background-size: 200%;
   text-align: center;
   z-index: 99;
@@ -2284,5 +2308,23 @@ p {
 }
 
 .footer-copyright .social li a:hover {
-  color: #fe8464;
+  color: var(--primary-color);
+}
+
+.about-content .main-btn {
+  color: white;
+  transition: all 0.5s;
+}
+.about-content .main-btn:hover {
+  color: var(--primary-color);
+  background: white;
+  border: 1.5px solid var(--primary-color);
+}
+
+button[aria-expanded="true"] {
+  color: var(--primary-color);
+}
+
+.contact-us-submit {
+  background: var(--primary-color);
 }
