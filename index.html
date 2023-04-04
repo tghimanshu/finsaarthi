@@ -84,11 +84,28 @@
                     <li class="nav-item">
                       <a class="page-scroll active" href="#home">Home</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#about">About</a>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#about"
+                        id="aboutUs"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        About Us
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="aboutUs">
+                        <li>
+                          <a class="dropdown-item" href="#">What we do</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Our strengths</a>
+                        </li>
+                      </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#features">Services</a>
+                      <a class="page-scroll" href="#features">Our Services</a>
                     </li>
                     <li class="nav-item">
                       <a class="page-scroll" href="#facts">Strengths</a>
@@ -102,22 +119,16 @@
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
-                        Review
+                        Gallery
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="reviewItems">
-                        <li><a class="dropdown-item" href="#">School</a></li>
-                        <li><a class="dropdown-item" href="#">College</a></li>
-                        <li><a class="dropdown-item" href="#">Corporate</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Association</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">General Public</a>
-                        </li>
                         <li>
                           <a class="dropdown-item" href="#"
-                            >Financial Education</a
+                            >Awards and Certifications</a
                           >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">News and Media</a>
                         </li>
                       </ul>
                     </li>
@@ -136,10 +147,12 @@
                         class="dropdown-menu"
                         aria-labelledby="navbarDropdownMenuLink"
                       >
-                        <li><a class="dropdown-item" href="#">Quiz</a></li>
                         <li><a class="dropdown-item" href="#">Videos</a></li>
                         <li><a class="dropdown-item" href="#">Blogs</a></li>
                         <li><a class="dropdown-item" href="#">Magazines</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Research Papers</a>
+                        </li>
                         <li>
                           <a class="dropdown-item" href="#"
                             >Financial Education</a
@@ -216,6 +229,61 @@
                 data-wow-delay="1.4s"
               >
                 <img src="assets/images/header/header-hero.png" alt="hero" />
+                <div class="hero-image-content">
+                  <div
+                    id="carouselExampleFade"
+                    class="carousel slide carousel-fade"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="assets/images/portfolio/1.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/portfolio/2.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/portfolio/3.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleFade"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleFade"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
               </div>
               <!-- header hero image -->
             </div>
@@ -264,7 +332,7 @@
                   from Co-operative Housing Societies
                 </p>
                 <a href="assets/brochure.pdf" class="main-btn" download
-                  >Download Brochure</a
+                  >Download Corporate Profile</a
                 >
               </div>
               <!-- about content -->
@@ -501,7 +569,7 @@
                     <div class="counter-items text-center">
                       <span
                         class="count countup text-uppercase"
-                        cup-end="2500"
+                        cup-end="3000"
                       ></span>
 
                       <p class="text">Workshops</p>
@@ -749,7 +817,7 @@
             <div class="section-title text-center pb-40">
               <div class="line m-auto"></div>
               <h3 class="title">
-                Partner With Us
+                Why Partner With Us
                 <!-- <span> - School</span> -->
               </h3>
             </div>
@@ -869,18 +937,18 @@
                     <div class="col-md-6">
                       <div class="input-group">
                         <input
-                          type="text"
+                          type="email"
                           class="form-control"
-                          placeholder="Name"
+                          placeholder="Contact Number"
                         />
                       </div>
                     </div>
                   </div>
                   <div class="input-group mt-3">
                     <input
-                      type="text"
+                      type="number"
                       class="form-control"
-                      placeholder="Name"
+                      placeholder="Email Address"
                     />
                   </div>
                   <div class="input-group mt-3">
@@ -888,7 +956,7 @@
                       type="text"
                       class="form-control"
                       rows="5"
-                      placeholder="Name"
+                      placeholder="message"
                     ></textarea>
                   </div>
                   <div class="text-center mt-3">

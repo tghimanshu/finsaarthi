@@ -744,12 +744,12 @@ p {
 
 .header-hero-image {
   padding-top: 45px;
+  position: relative;
 }
 
 .header-hero-image img {
   max-width: 650px;
 }
-
 @media (max-width: 767px) {
   .header-hero-image img {
     max-width: 100%;
@@ -2327,4 +2327,20 @@ button[aria-expanded="true"] {
 
 .contact-us-submit {
   background: var(--primary-color);
+}
+
+.hero-image-content {
+  position: absolute;
+  aspect-ratio: 16/9;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 480px;
+}
+
+@media (max-width: 767px) {
+  .hero-image-content {
+    top: 19%;
+    width: 73%;
+  }
 }
