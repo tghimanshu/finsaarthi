@@ -337,4 +337,14 @@
       },
       retina_detect: !0,
     });
+  document.querySelectorAll('a[href="#coming-soon"]').forEach((elem) => {
+    elem.addEventListener("click", (e) => {
+      document
+        .querySelector(".hero-image-content:not(.alt)")
+        .classList.add("d-none");
+      document
+        .querySelector(".hero-image-content.alt")
+        .classList.remove("d-none");
+    });
+  });
 })();

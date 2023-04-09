@@ -2384,3 +2384,19 @@ button[aria-expanded="true"] {
 .counter-items span {
   text-align: center;
 }
+
+.hero-image-content {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-image-content h2 {
+  color: var(--primary-color);
+}
+
+.hero-image-content p {
+  color: var(--primary-color);
+}
