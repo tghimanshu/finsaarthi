@@ -2328,7 +2328,7 @@ button[aria-expanded="true"] {
 .hero-image-content {
   position: absolute;
   aspect-ratio: 16/9;
-  top: 73px;
+  top: 69px;
   left: 50%;
   transform: translateX(-50%);
   width: 480px;
@@ -2337,17 +2337,17 @@ button[aria-expanded="true"] {
   position: absolute;
   content: "";
   width: 100%;
-  height: 10px;
+  height: 15px;
   background: white;
-  bottom: -10px;
+  bottom: -15px;
   left: 0;
   z-index: 9999;
 }
 
 @media (max-width: 767px) {
   .hero-image-content {
-    top: 19%;
-    width: 73%;
+    top: 18%;
+    width: 74%;
   }
 }
 
