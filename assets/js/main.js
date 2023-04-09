@@ -337,7 +337,15 @@
       },
       retina_detect: !0,
     });
-  document.querySelectorAll('a[href="#coming-soon"]').forEach((elem) => {
+  document.querySelectorAll('a:not([href="/#coming-soon"])').forEach((elem) => {
+    elem.addEventListener("click", (e) => {
+      document
+        .querySelector(".hero-image-content:not(.alt)")
+        .classList.remove("d-none");
+      document.querySelector(".hero-image-content.alt").classList.add("d-none");
+    });
+  });
+  document.querySelectorAll('a[href="/#coming-soon"]').forEach((elem) => {
     elem.addEventListener("click", (e) => {
       document
         .querySelector(".hero-image-content:not(.alt)")
