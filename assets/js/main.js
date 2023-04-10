@@ -347,6 +347,10 @@
   });
   document.querySelectorAll('a[href="/#coming-soon"]').forEach((elem) => {
     elem.addEventListener("click", (e) => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
       document
         .querySelector(".hero-image-content:not(.alt)")
         .classList.add("d-none");
