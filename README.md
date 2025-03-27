@@ -1,3 +1,3 @@
 # Finsaarthi 
 
-UI page for finsaarth
+UI page for finsaarthi - A Freelancing project
