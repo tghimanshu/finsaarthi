@@ -1,17 +1,36 @@
 (function () {
   "use strict";
 
-  // ==== Preloader
+  /**
+   * Initializes the preloader fadeout on window load.
+   * Sets a timeout to call the fadeout function after 500ms.
+   * @function
+   * @name window.onload
+   * @returns {void}
+   */
   window.onload = function () {
     window.setTimeout(fadeout, 500);
   };
 
+  /**
+   * Fades out and hides the preloader element.
+   * Changes the opacity to 0 and display to none.
+   * @function
+   * @returns {void}
+   */
   function fadeout() {
     document.querySelector(".preloader").style.opacity = "0";
     document.querySelector(".preloader").style.display = "none";
   }
 
-  // ======= Sticky
+  /**
+   * Handles sticky navigation bar and back-to-top button visibility on scroll.
+   * Adds 'sticky' class to navbar when scrolled past its offset.
+   * Shows back-to-top button when scrolled more than 50px.
+   * @function
+   * @name window.onscroll
+   * @returns {void}
+   */
   window.onscroll = function () {
     const header_navbar = document.querySelector(".navbar-area");
     const sticky = header_navbar.offsetTop;
@@ -50,7 +69,13 @@
     });
   });
 
-  // section menu active
+  /**
+   * Updates the active state of menu links based on the current scroll position.
+   * Loops through section links and adds 'active' class to the link corresponding to the current viewport section.
+   * @function
+   * @param {Event} event - The scroll event object.
+   * @returns {void}
+   */
   function onScroll(event) {
     const sections = document.querySelectorAll(".page-scroll");
     const scrollPos =
@@ -92,6 +117,11 @@
   });
 
   // ========= glightbox
+  /**
+   * Initializes GLightbox for video content.
+   * Configured to play YouTube video with autoplay enabled.
+   * @type {object}
+   */
   const myGallery = GLightbox({
     href: "https://www.youtube.com/watch?v=r44RKWyfcFw",
     type: "video",
@@ -101,6 +131,10 @@
   });
 
   //====== counter up
+  /**
+   * Initializes counterUp for animated number counting.
+   * @type {object}
+   */
   const cu = new counterUp({
     start: 0,
     duration: 2000,
@@ -111,6 +145,9 @@
   cu.start();
 
   //=====  WOW active
+  /**
+   * Initializes WOW.js for reveal animations on scroll.
+   */
   new WOW().init();
 
   //=====  particles
